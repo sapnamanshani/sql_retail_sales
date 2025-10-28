@@ -39,3 +39,27 @@ CREATE TABLE retail_sales
     total_sale FLOAT
 );
 
+2. Data Exploration & Cleaning
+Record Count: Determine the total number of records in the dataset.
+Customer Count: Find out how many unique customers are in the dataset.
+Category Count: Identify all unique product categories in the dataset.
+Null Value Check: Check for any null values in the dataset and delete records with missing data.
+
+```sql
+SELECT *
+FROM retail_sale
+
+CREATE TABLE retail_sales01
+(
+    transactions_id INT PRIMARY KEY,
+    sale_date DATE,
+    sale_time TIME,
+    customer_id INT,	
+    gender VARCHAR(15),
+    age INT,
+    category VARCHAR(15),
+    quantiy INT,
+    price_per_unit FLOAT,	
+    cogs FLOAT,
+    total_sale FLOAT
+);
